@@ -11,7 +11,7 @@ import play.libs.ws.WSResponse;
 import java.util.concurrent.CompletionStage;
 
 public class FeedService {
-    public FeedResponse getFeesResponse(String keyword) {
+    public FeedResponse getFeedResponse(String keyword) {
         FeedResponse feedResponseObject = new FeedResponse();
         try {
             WSRequest feedRequest = WS.url("https://news.google.com/news");
